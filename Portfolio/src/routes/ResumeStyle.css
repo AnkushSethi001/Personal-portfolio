@@ -1,0 +1,26 @@
+.Resume-container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ResumeImg{
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:740px){
+
+.ResumeImg{
+    width:90%;
+}
+
+}

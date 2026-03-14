@@ -1,0 +1,169 @@
+
+.main{
+    width:100%;
+    padding:40px 20px;
+    box-sizing: border-box;
+   
+}
+
+.main-2{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+    width: 100%;
+}
+
+
+.left-main{
+    flex:1;
+    min-width:250px;
+}
+
+.left1 h1{
+    font-size:2rem;
+    color: rgb(240, 237, 237);
+    opacity: 7;
+}
+
+.left1 h2{
+    font-size:1.5rem;
+    color: yellow;
+}
+
+.left1 h3{
+    font-size:1.5rem;
+    margin-top: 5px;
+}
+
+.left1 p{
+    margin-top:30px;
+    line-height:1.5;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+
+.center{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-width:250px;
+}
+
+.img1{
+    border-radius: 50%;
+    width:250px;
+    height: 250px;
+    max-width: 100%;
+    object-fit: cover;
+    
+}
+
+.left1 .btn{
+    margin-left: 10px;
+   border-radius: 12px;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   padding-left: 7px;
+    padding-right: 7px;
+   
+}
+
+.right-main{
+    flex:1;
+    min-width:250px;
+    margin-right: 2rem;
+}
+
+.right2{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.container-right{
+    background:#272626;
+    padding:15px;
+    border-radius:8px;
+    text-align:center;
+    word-wrap: break-word;
+}
+
+.container-right h1 {
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+.container-right p {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:900px){
+
+.main-2{
+    flex-direction:column;
+    text-align:center;
+}
+
+.center{
+    order:-1;
+}
+
+.right2{
+    grid-template-columns:1fr 1fr;
+    
+}
+
+.left1 .btn{
+    margin-right: 5%;
+    
+}
+
+}
+
+
+
+@media screen and (max-width:740px){
+
+    .main{
+        padding: 20px 15px;
+    }
+
+    .main-2{
+        gap: 20px;
+    }
+
+.left1 h1{
+    font-size:1.6rem;
+}
+
+.left1 h2{
+    font-size:2rem;
+}
+
+.left1 p{
+    font-size:0.9rem;
+}
+
+.img1{
+    width:200px;
+    height: 200px;
+}
+
+.right2{
+    grid-template-columns:1fr;
+}
+.left1 .btn{
+    margin-right: 6%;
+}
+
+}
